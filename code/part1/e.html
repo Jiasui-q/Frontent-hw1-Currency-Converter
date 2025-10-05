@@ -48,12 +48,26 @@
         /* You may add additional code here, if you need. */
       }
 
+      div {
+        flex: 1
+      }
+
+      @media (orientation: portrait) {
+        main {
+          flex-direction: column;
+        }
+      }
+
       /* Add whatever CSS you need below to reference the elements you create in your HTML. */
     </style>
   </head>
   <body>
     <main>
       <!-- Add the appropriate <div> elements here. -->
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="yellow"></div>
     </main>
   </body>
 </html>

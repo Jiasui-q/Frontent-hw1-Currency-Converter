@@ -45,7 +45,24 @@
         height: 100vh;
 
         display: flex;
+        flex-direction: column;
         /* You may add additional code here, if you need. */
+      }
+
+      main > div {
+        display: flex;
+      }
+
+      main > div:first-child {
+        flex: 2
+      }
+
+      main > div:last-child {
+        flex: 1
+      }
+
+      main > div > div {
+        flex: 1;
       }
 
       /* Add whatever CSS you need below to reference the elements you create in your HTML. */
@@ -54,6 +71,14 @@
   <body>
     <main>
       <!-- Add the appropriate <div> elements here. -->
+        <div>
+          <div class="red"></div>
+          <div class="blue"></div>
+        </div>
+        <div>
+          <div class="green"></div>
+          <div class="yellow"></div>
+        </div>
     </main>
   </body>
 </html>
